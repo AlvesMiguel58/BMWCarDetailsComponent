@@ -1,0 +1,147 @@
+.main-page {
+    padding: 0 20%;
+}
+.card-details-container {
+    margin: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    // height: 500px;
+    overflow: hidden;
+    position: relative;
+    .car-specs {
+        overflow: hidden;
+        position: relative;
+        background-color: #f5f2f2;
+        width: 55%;
+        .view-options {
+            margin-bottom: 50px;
+            width: 100%;
+            background-image: url('../../assets/images/showroom.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 360px;
+            .view-btns {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                display: flex;
+                flex-direction: row;
+                .view-block {
+                    padding: 10px;
+                    background-color: rgb(226, 225, 225);
+                    cursor: pointer;
+                }
+                .active {
+                    border-bottom: 2px solid #1c69d4;
+                }
+            }
+            .car-img {
+                margin: auto;
+                width: 100%;
+            }
+        }
+        .car-spec {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .zero-100,
+            .engine,
+            .fuel {
+                padding: 0 50px;
+                p {
+                    line-height: 1.1;
+                }
+            }
+        }
+        .more-specs {
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                    text-decoration-color: rgb(182, 182, 182);
+                    font-family: 'BMWTypeNextBold';
+                }
+            }
+        }
+    }
+    .car-details {
+        width: 45%;
+        padding: 0 40px;
+        .car-title {
+            padding-top: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .car-info {
+            background-color: #dfdcdc;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            p {
+                margin: 0;
+                font-family: 'BMWTypeNextBold';
+                text-transform: capitalize;
+            }
+            span {
+                color: grey;
+            }
+        }
+        .sales-container {
+            .sale-details {
+                padding: 15px;
+                background-color: #dfdcdc;
+                .installments,
+                .offer-price,
+                .actions {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: start;
+                    border-bottom: 1px solid rgb(182, 182, 182);
+                    // margin-bottom: 10px;
+                }
+                .offer-price,
+                .actions {
+                    align-items: center;
+                    margin-top: 15px;
+                }
+                .actions {
+                    justify-content: space-between;
+                    border: none;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        color: #262626;
+                        img {
+                            width: 17px;
+                        }
+                    }
+                    a:hover {
+                        color: #4d4d4d;
+                    }
+                    a:active {
+                        color: #262626;
+                    }
+                }
+            }
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+// BootStrap import
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+//Fonts
+@font-face {
+    font-family: 'BMWTypeNextLight';
+    src: url('./assets/fonts/TTF/BMWTypeNextProTT-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMWTypeNextRegular';
+    src: url('assets/fonts/TTF/BMWTypeNextProTT-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMWTypeNextBold';
+    src: url('assets/fonts/TTF/BMWTypeNextProTT-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//custom styling imports
+@import './app/theme/_typography.scss';
+@import './app/theme/_layouts.scss';
+@import './app/theme/_buttons.scss';
+
+body {
+    font-family: 'BMWTypeNextLight';
+}

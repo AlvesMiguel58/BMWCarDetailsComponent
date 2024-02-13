@@ -1,0 +1,41 @@
+.wishlist-btn {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.wishlist-btn:hover {
+    transform: translateY(-0.2em);
+}
+.wishlist-btn:active {
+    transform: translateY(0.3em);
+}
+.compare-btn,
+.view-btn {
+    border-radius: 0px;
+    width: 190px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'BMWTypeNextLight';
+}
+.compare-btn {
+    background-color: #4d4d4d;
+    border: none;
+}
+.compare-btn:hover {
+    background-color: #262626 !important;
+}
+.compare-btn:active {
+    background-color: #4d4d4d !important;
+}
+.view-btn {
+    background-color: #1c69d4;
+    border: none;
+}
+.view-btn:hover {
+    background-color: #0653b6 !important;
+}
+.view-btn:active {
+    background-color: #1c69d4 !important;
+}

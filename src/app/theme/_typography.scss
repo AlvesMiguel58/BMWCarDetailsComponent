@@ -1,0 +1,45 @@
+.time,
+.vroom,
+.gulp {
+    font-family: 'BMWTypeNextRegular';
+    font-size: 25px;
+}
+.sub-text {
+    font-size: 11px;
+}
+.title {
+    font-family: 'BMWTypeNextRegular';
+    margin: 0;
+}
+.body-type {
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    font-size: 1.5rem;
+}
+.delivery {
+    font-family: 'BMWTypeNextRegular';
+    font-weight: 500;
+    font-size: 19px;
+}
+.monthly-price,
+.price {
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'BMWTypeNextRegular';
+}
+.price {
+    font-size: 22px;
+}
+a {
+    font-family: 'BMWTypeNextRegular';
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #000000;
+    cursor: pointer;
+}
+.options-text {
+    font-family: 'BMWTypeNextBold';
+    border-bottom: 1px solid rgb(182, 182, 182);
+}

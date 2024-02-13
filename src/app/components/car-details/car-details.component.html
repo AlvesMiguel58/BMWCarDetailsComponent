@@ -1,0 +1,102 @@
+<div class="card-details-container">
+    <!-- Left side of component -->
+    <div class="car-specs">
+        <!-- Sorry but the showroom image wasnt provided as a resource so I found one -->
+        <div class="view-options">
+            <div class="view-btns">
+                <div class="view-block" (click)="viewOption(car)" [ngClass]="car.viewCar.outside ? 'active' :''">
+                    <img src="../../../assets/icons/car-front_rg.svg" alt="" />
+                </div>
+                <div class="view-block" (click)="viewOption(car)" [ngClass]="car.viewCar.inside ? 'active' :''">
+                    <img src="../../../assets/icons/seat-side_rg.svg" alt="" />
+                </div>
+            </div>
+            <img class="car-img" src="../../../assets/images/car.png" alt="" />
+        </div>
+        <div class="car-spec">
+            <div class="zero-100">
+                <p>
+                    <span class="time">{{car.TechnicalSpecs.Zeroto100}}</span
+                    >sec <br />
+                    <span class="sub-text">0-100 km/h</span>
+                </p>
+            </div>
+            <span>|</span>
+            <div class="engine">
+                <p>
+                    <span class="vroom">{{car.TechnicalSpecs.EnginePerfomance}}</span
+                    >kW <br />
+                    <span class="sub-text">Engine Perfomance</span>
+                </p>
+            </div>
+            <span>|</span>
+            <div class="fuel">
+                <p>
+                    <span class="gulp">{{car.TechnicalSpecs.FuelConsumption}}</span
+                    >l/100km <br />
+                    <span class="sub-text">FuelConsumption <br />(combined)</span>
+                </p>
+            </div>
+        </div>
+        <div class="more-specs">
+            <p>
+                <span class="material-symbols-outlined"> expand_less </span>
+                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> More Specifications </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Right side of component -->
+    <div class="car-details">
+        <div class="car-title">
+            <div>
+                <h2 class="title">{{car.modelName}}</h2>
+                <p class="body-type">{{car.BodyType}}</p>
+            </div>
+            <div>
+                <img class="wishlist-btn" src="../../../assets/icons/heart_rg.svg" alt="wishlist heart" />
+            </div>
+        </div>
+        <div class="car-info">
+            <p>{{car.NewDemo}}</p>
+            <span>|</span>
+            <p>{{car.FuelType}}</p>
+            <span>|</span>
+            <p>{{car.Transmition}}</p>
+        </div>
+        <div class="sales-container">
+            <p class="delivery">Delivery within 1 week</p>
+
+            <div class="sale-details">
+                <div class="installments">
+                    <p class="monthly">Per Month</p>
+                    <h3 class="monthly-price">R {{ car.pricing.MonthlyInstallment | number | replaceSpace}}</h3>
+                </div>
+                <div class="offer-price">
+                    <p class="monthly">Offer Price</p>
+                    <p class="price">R {{ car.pricing.OfferPrce | number | replaceSpace}}</p>
+                </div>
+                <div class="actions">
+                    <div class="email-option">
+                        <a>
+                            <img src="../../../assets/icons/Quotelist.svg" alt="" /> &nbsp;
+                            <span class="options-text">Email quote</span>
+                        </a>
+                    </div>
+                    <div class="payment-option">
+                        <a>
+                            <img src="../../../assets/icons/calculator_rg.svg" alt="" /> &nbsp;
+                            <span class="options-text">Payment Options</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="button" class="btn btn-primary compare-btn"><span class="material-symbols-outlined"> add </span> Compare</button>
+            <button type="button" class="btn btn-primary view-btn">View Vehicle</button>
+        </div>
+    </div>
+</div>
